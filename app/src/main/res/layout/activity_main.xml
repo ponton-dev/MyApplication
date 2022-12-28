@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/obrazek"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wyswietl"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/obrazek" />
+
+    <Button
+        android:id="@+id/lokacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wyswietl lokacje"
+        android:layout_below="@id/bt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="tutaj bedzie lokalizaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_below="@id/lokacja"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POKAZ"
+        android:layout_below="@+id/txt1"
+        />
+</RelativeLayout>
